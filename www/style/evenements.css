@@ -1,0 +1,54 @@
+/*      
+Document   : styles.css     
+Created on : 17 Juillet 2019    
+Author     : Marion CASTEL alias NYMASIA    
+Description: CSS pour le thème ACCES VR
+*/
+
+
+
+
+
+/* Les évènements */
+.article{
+    display: inline-block;
+    background-color:   #F5F5DC	;
+    margin: 5% 15% 5% 15%;
+    color: black;
+    width: 70%;
+
+}
+
+.deroulement{
+    display: block;
+    text-align: center; 
+    color: black; 
+    padding: 5%;
+
+}
+
+#titreevenement{
+    font-size: 2vw;
+    margin-bottom: 2%;
+}
+
+.description{
+    text-align: center;
+    margin: auto;
+    font-size: 1vw;
+}
+
+
+.couleur{
+    color: #00BCD4;
+    font-weight: bold;
+}
+
+.lien{
+    color: #00BCD4;
+    font-weight: bold;
+}
+
+.lien:hover{
+    color: activeborder;
+}

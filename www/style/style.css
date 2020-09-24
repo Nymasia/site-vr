@@ -1,0 +1,309 @@
+/*      
+Document   : styles.css     
+Created on : 4 Juillet 2019    
+Author     : Marion CASTEL alias NYMASIA    
+Description: CSS pour le thème ACCES VR
+*/
+
+
+html, body {
+    background-color : #f1f1f1; /* couleur d'arriere plan du site */
+    margin: 0; /* marges automatiques */
+    min-width: 100%; /* largeur min*/
+    font-family: Tahoma, Geneva, Kalimati, sans-serif; /* les polices utilisées */
+    padding : 0;
+    
+
+    /* effets */
+
+    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari et Chrome */
+    -o-animation: fadein 1s; /* Opera */
+}
+
+.corps{
+    margin-top: 3.5%;
+}
+
+/* Effets de la transition */
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* sur Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* sur Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* I] En-tête
+*/
+header
+{
+
+    position: fixed; /* Le conteneur est fixé en fonction de ses coordonnées (à 0px du bas) */
+    top: 0px; /* Bas */
+    width: 100%; /* largeur à 100% */
+    z-index: 2; /* block milieu */
+
+
+}
+
+/* Menu
+*/
+div.menu{ /* style du menu */
+    background-color: rgba(46, 46, 46, 0.9); /* couleur fond du menu */ 
+    overflow: hidden; /* gérer le dépassement du contenu des éléments dans le bloc */
+    width: 100%; /* largeur à 100% */
+    margin: 0px; /* pas de marge */
+    padding: 0px; /* pas de marges internes */
+    min-width: 60px; /* largeur minimum */
+    height: 3em; /* hauteur */
+
+}
+
+nav ul {  /* structure menu */
+    display: block; /* définit organisation interne */
+    flex-direction: row;   /* allignement horizontale */ 
+    justify-content: space-between;  /* justifié */ 
+    text-align: center;
+
+
+}
+
+nav ul li {  /* style liens */  
+    display: inline-flex;   /* définit organisation interne */
+    justify-content: center;    /* liens centrés */
+    list-style-type: none;   /* pas de point */
+    font-size: 1vw;   /* taille texte */
+    flex-grow: 1;    /* facteur d'expension */
+    padding-right: 2px;
+    width: 10%;
+}
+
+nav ul li a {     /* Lien */
+    padding: 0px;  /* pas de marge interne */  
+    color: white; /* couleur texte blanc */
+    text-decoration: none; /* pas cde soulignement du texte */
+} 
+
+/*CSS pour l'effet de soulignement quand on passe la souris sur l'un des menu */
+li a:after {
+    content: '';
+    display: block; /* type block */
+    margin: auto;
+    height: 2px; /* hauteur du soulignement */
+    width: 0; /* pas de largeur */
+    background: transparent; /* arriere plan transparent */
+    transition: width .5s ease, background-color .5s ease; /* transition de soulignement */
+}
+li a:hover:after { /* srvole du menu */
+    width: 100%;
+    background: #fff;
+}
+
+#logo{ /* logo de l'entreprise */
+    position: fixed; /* position fix ne bouge pas */
+    top: 1%;
+    left: 5%;
+    width: 8vw;
+    z-index: 3;
+}
+
+.recherche_p{
+    position: fixed; /* position fix ne bouge pas */
+    display: inline-block;
+    top: 0.8em;
+    right: 3vw; 
+    z-index: 3;
+}
+#search{
+    float: left;
+    width: 7vw;
+    font-size: 1vw;
+
+}
+#search-btn{
+    width: 2vw;
+    margin-left: 1vw;
+}
+
+/* Thème principal */
+
+.contenu{
+    width: 100%;
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+
+/* titre principaux */
+h1{
+    text-align: center;
+    font-size: 2vw;
+    color: #00BCD4;
+}
+
+/* 2ème titre */
+h2{
+    text-align: center;
+    font-size: 1vw;
+}
+
+
+/* section du paragraphe d'explication principal */
+.paraprincipal{
+    display: flex;
+    text-align: center;
+    background-color: #455A64;
+    padding: 2% 2% 2% 2%;
+    margin: 1% 1% 1% 1%;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+}
+
+
+/* sections des paragraphes de description */
+div.explications{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#descriptionvr{
+    display: flex;
+    text-align: center;
+    background-color: #455A64;
+    padding: 2% 2% 2% 2%;
+    margin: 1% 1% 1% 1%;
+    color: white;
+    border-radius: 10px;
+}
+
+/* paragraphe des devis */
+.paradevis{
+    font-style: italic;
+    color: #455A64; 
+    text-align: center;
+    font-size: 20px;
+}
+
+.source{
+    font-size: 10px;
+    text-align: right;   
+}
+
+.souligne{
+    text-decoration: underline;
+}
+
+/*page partenaire */
+
+#fondpartenaires{
+    display: fixed;
+    background-color: rgb(0, 0, 0, 0.8);
+    min-height: 100%;
+    margin: 0;
+}
+
+/* CSS des images */
+.imagesPartenaire{
+    display: block;
+    position: center;
+    max-height: 85vh;
+    text-align: center;
+    margin: 0 auto 0 auto;
+}
+
+.imgcasque{
+    width: 20%;
+    padding: 2% 2% 2% 2%;
+}
+.imggauche{
+    display: flex;
+    float: left;
+    width: 50%;
+    padding-right: 2%; 
+}
+
+.imgdroite{
+    display: flex;
+    float: right;
+    width: 50%; 
+    padding-left: 2%;
+
+}
+
+.imgcentre{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; 
+    padding-left: 2%;
+}
+
+
+
+
+/* Pied de pages */
+
+footer   {
+    display: flex; /* Ce conteneur est "flexible" */
+    justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
+    align-items: center; /* Les éléments portés sont centrés à la verticale */
+    bottom: 0px; /* Bas */
+    height: 3em; /* Hauteur */
+    width: 100%; /* Le pied de page occupe toute la largeur */ 
+    background-color:rgba(46, 46, 46, 0.9); /* Couleur de fond */
+    color: #bbb; /* Couleur du texte */
+    text-align:center; /* Texte centré */
+}
+
+footer p {
+    font-size: 1vw; 
+}
+
+footer a{
+    color: inherit; /* Couleur du lien identique à celle du conteneur */
+}
+
+#reseauxsociaux {
+    display: flex; /* conteneur flexible */
+    flex-direction: row;  /* aligner horizontale */
+    float: right;
+}
+
+.imgRS{
+    width: 3vw;
+}
+
+.lien{
+    text-decoration:none; /* pas de boutons */
+}
+
+
+

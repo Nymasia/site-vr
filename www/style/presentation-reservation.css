@@ -1,0 +1,67 @@
+/*      
+Document   : styles.css     
+Created on : 4 Juillet 2019    
+Author     : Marion CASTEL alias NYMASIA    
+Description: CSS pour le thème ACCES VR
+*/
+
+/* Présentation de l'entreprise */
+
+
+.blockbasique{ /* Block principal de la présentation */
+    display: inline-block;
+    width: 100%;
+    background-color: black;
+
+
+}
+
+.textepresentation{
+    display: block;
+    text-align: center; 
+    padding: 2% 5% 2% 5%;
+    color: white;
+}
+
+.titrePresentation{
+
+    font-size: 3vw; 
+}
+
+.descriptionEntreprise{
+
+    font-size: 1vw;
+    padding-top: 3%;
+    line-height: 1.5em;
+}
+
+.soustitreEntreprise{
+
+    font-size: 1vw;
+    padding-top: 5%;
+    color: #00BCD4;
+    line-height: 1.5em;
+}
+
+/* Réservation fauteuil */
+.boutonreservation a{
+    display:flex; /*type bloc */
+    float: right;
+    border-width:3px; /* largeur bordure */
+    border-style:solid; /* style bordure */
+    border-color:#00BCD4; /* couleur bordure */
+    background-color: #00BCD4; /*couleur arriere plan */
+    width:10em; /* largeur */
+    height:3em; /* taille ligne hauteur */
+    text-align:center; /* alignement du texte */
+    vertical-align:middle; /* alignement sur la verticale */
+    text-decoration:none; /* pas de boutons */
+    font-size: 1.5vw; /* taille texte */
+    color: initial; /* couleur */
+    padding: 1em 2em 0 2em;
+    margin: 1em 7em 0 0;
+}
+
+div.boutonreservation a:hover { /* Quand on survole le lien */
+    background-color: #1E90FF; /* changement couleur quand la souris passe dessus */
+}

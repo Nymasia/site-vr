@@ -1,0 +1,170 @@
+/*      
+Document   : contact.css    
+Created on : 10 Juillet 2019    
+Author     : Marion CASTEL alias NYMASIA    
+Description: CSS pour contact acces vr
+*/
+
+#main{
+    position: fixed;    
+    background-image: url("images.css/contact.jpg");
+    background-repeat: no-repeat;
+    padding:0;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+    height: 100%;
+    width: 100%;
+
+
+}
+
+#contact{
+    flex-direction: row;   /* allignement horizontale */ 
+    justify-content: space-around;  /* justifié */ 
+    background-color: rgb(0,0,0,0.6);
+    margin: 10vh 3em 5vh 3em;
+    padding:1%; 
+    height: 70vh;
+
+
+}
+
+#contact form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 600px;
+    color: white;
+
+
+}
+
+#contact form fieldset {
+    padding: 1em;
+}
+
+#coordo legend {
+    padding: 1%;
+    font-weight: bold;
+}
+
+#coordo label {
+    margin-right: 3em;
+    font-size: 1vw;
+}
+
+#coordo input, #coordo select {
+    flex: 1;
+}
+
+#coordo div {
+    display: flex;
+    justify-content: space-between;
+    margin: 1vh;
+}
+
+#coordo input[type="checkbox"] {
+    margin-right: 1em;
+}
+
+#coordo #marques label {
+    text-transform: capitalize;
+}
+
+#coordo fieldset {
+    width: fit-content;
+    margin: auto;
+}
+
+#motif {
+    align-self: flex-start;
+}
+
+#motif legend {
+    padding: 0 2em;
+    font-weight: bold;
+}
+
+#motif div {
+    margin: 3%;
+}
+
+#motif label {
+    margin-left: 3em;
+}
+
+#controles {
+    margin-top: 3vh;
+    display: flex;
+}
+
+#controles input {
+    padding: 2%;
+}
+
+#controles input:first-child {
+    margin-right: 1vw;
+}
+
+input:valid, :not(input[type="submit"]) {
+    color: green;
+}
+input:invalid {
+    color: red;
+}
+
+#coordo div.input-validation {
+    margin: 0;
+}
+
+input[type="text"]:valid ~ .input-validation::before,
+input[type="email"]:valid ~ .input-validation::before {
+    content: "✔";
+    margin-left: 1em;
+    color: green;
+}
+
+.infos{
+    float: left; 
+    margin-left: 5vw;
+    text-align: center;
+    font-size: 1vw;
+    margin-bottom: 5vh;
+    color: white;
+}
+
+#map{
+    width:25vw;
+    height: 35vh;
+}
+
+#btn_envoyer{
+    font-size: 1vw;
+    float: left;
+
+}
+
+#btn_effacer{
+    font-size: 1vw;
+    float: right;
+}
+
+/* page si le contact est bien envoyé */
+
+#contactok{
+    display: block;
+    background-repeat: no-repeat; /* l'image ne se répète pas */
+    background-size: 100%; /* contenu dans la page arriere plan */
+    background-image: url('../images/email-marketing.png');
+    background-attachment: fixed;
+    margin: 8% 0% 0% 0%;
+    width: 100%;
+}
+
+#messageCible{
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    padding: 15%;
+
+}

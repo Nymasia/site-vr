@@ -1,0 +1,71 @@
+/*      
+Document   : styles.css     
+Created on : 4 Juillet 2019    
+Author     : Marion CASTEL alias NYMASIA    
+Description: CSS pour le thème ACCES VR
+*/
+
+
+#para{
+    background-color: black;
+    width: 100%;
+    color: white;
+    padding: 5vh 0 3vh 0;
+    height: 30vh;
+
+}
+
+div.differentesactivites{
+    display: flex;     /* flexible */
+    flex-direction: row;    /* alignement horizontale */
+    justify-content: space-between;  /* justifié */
+    margin-left:auto;
+    padding: 1% 4% 2% 4%;
+
+
+}
+
+
+#imgPrestations{
+    width: 12vw;
+}
+
+#prestations {   
+    display: inline-block;  /* flexible */
+    list-style-type: none;   /* pas d'effet boutons */
+    font-size: large; /* taille texte */
+}
+#prestations a{  /*liens des prestations */
+    z-index: 1; /* block fond */
+    display: inline-block; /* type bloc */
+    text-align:center; /* alignement centre */
+    vertical-align:middle; /* alignement au milieux vertical */
+    text-decoration:none; /* pas de soulignement */
+    font-size: 1vw; /* taille texte */
+    border-width:6px; /* taille bourdure */
+    border-style:solid; /* style bordure */
+    border-color:#00BCD4; /* couleur bordure */
+    background-color:#DCDCDC; /* couleur arriere plan */
+    height: 35vh; /* hauteur */
+    width: 25em; /* largeur */
+    text-decoration: none; /* pas de deco */
+    color: initial;  /* couleur noir */
+    padding: auto; /* marges internes */
+    margin-top: 1%; /* marges externes haut */
+    margin-bottom: 1vh; /* marges externes bas */
+
+    /* Filtre noir et blanc */
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+#prestations a:hover{ /* Quand on survole les boutons */
+    /* filtre couleur */
+    display: inline-block;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+
+}
+

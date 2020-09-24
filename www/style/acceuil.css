@@ -1,0 +1,173 @@
+/*      
+Document   : styles.css     
+Created on : 4 Juillet 2019    
+Author     : Marion CASTEL alias NYMASIA    
+Description: CSS pour le thème de l'acceuil ACCES VR
+*/
+
+/* Problème de CSS sur cette page qui crée une marge en bas du site A REGLER !!!! */
+
+/* I] Présentation */
+section.presentation{   /* Arrière plan de présentation */
+    display: block;
+    background-image: url("images.css/presentationphoto.jpg") ; /* image de présentation */
+    background-repeat: no-repeat; /* l'image ne se répète pas */
+    background-position-x: center; /* position centrée de l'image */ 
+    margin: 2% 0 0 0;
+    padding: 0;
+    -webkit-background-size: contain; /* pour anciens Chrome et Safari */
+    background-size: contain; /* version standardisée */
+
+    height: auto;
+
+}
+
+div.titre{      /* titre principal */
+    display: block; /* block complet */
+    text-align: center;
+    padding: 2% 45% 8% 8%; /* marge interne droit */
+    margin: 0;
+}
+
+#grandtitre{ /* Acces VR */
+    font-size: 6vw; /* taille titre */
+    color: #000; /* couleur du titre */
+}
+
+#soustitre{ /* venez découvrir le monde de la réalité virtuelle */
+    font-size: 2.1vw; /* taille titre */
+    color: #000; /* couleur du titre */
+}
+
+/* boutton en savoir plus */
+
+@import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC);
+*{
+  box-sizing:border-box;
+}
+
+
+div.boutonsavoir a{  
+    display:block; /*type bloc */
+    border-width:3px; /* largeur bordure */
+    border-style:ridge; /* style bordure */
+    border-color:#00BCD4; /* couleur bordure */
+    background-color: #00BCD4; /*couleur arriere plan */
+    width:7em; /* largeur */
+    height:5vh; /* taille ligne hauteur */
+    text-align:center; /* alignement du texte */
+    vertical-align:middle; /* alignement sur la verticale */
+    text-decoration:none; /* pas de boutons */
+    font-size: 1.2vw; /* taille texte */
+    color: initial; /* couleur */
+    margin: 10% auto 10% auto;
+    padding: 0.8vh 0 0.1vh 0;
+}
+
+div.boutonsavoir a:hover { /* Quand on survole le lien */
+    background-color: #1E90FF; /* changement couleur quand la souris passe dessus */
+}
+
+
+
+
+/* II] Les différentes prestations */
+
+div.differentesactivites{
+    display: flex;     /* flexible */
+    flex-direction: row;    /* alignement horizontale */
+    justify-content: space-between;  /* justifié */
+    margin:0% 10% 0% 10%;
+
+
+}
+
+
+#imgPrestations{
+    width: 14vw;
+}
+
+#prestations {   
+    display: inline-block;  /* flexible */
+    list-style-type: none;   /* pas d'effet boutons */
+    font-size: large; /* taille texte */
+}
+#prestations a{  /*liens des prestations */
+    z-index: 1; /* block fond */
+    display: inline-block; /* type bloc */
+    text-align:center; /* alignement centre */
+    vertical-align:middle; /* alignement au milieux vertical */
+    text-decoration:none; /* pas de soulignement */
+    font-size: 1vw; /* taille texte */
+    border-width:6px; /* taille bourdure */
+    border-style:solid; /* style bordure */
+    border-color:#00BCD4; /* couleur bordure */
+    border-radius: 300px;
+    background-color:#DCDCDC; /* couleur arriere plan */
+    height: 21em; /* hauteur */
+    width: 21em; /* largeur */
+    text-decoration: none; /* pas de deco */
+    color: initial;  /* couleur noir */
+    padding: 0; /* marges internes */
+    margin-top: 5%; /* marges externes haut */
+    margin-bottom: 3%; /* marges externes bas */
+
+    /* Filtre noir et blanc */
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+#prestations a:hover{ /* Quand on survole les boutons */
+    /* filtre couleur */
+    display: inline-block;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+
+}
+
+/* III] Les evenements */
+
+div.reportages{
+    text-align:center; /* allignement du texte au centre */
+    max-width: 100%; /* largeur */
+    margin: 1%; 
+    border-color: #00BCD4;
+    border-style: dotted;
+}
+
+#titreEvenement{
+    text-align: left;
+    margin-left: 5%;
+    font-size: 3vw;
+}
+
+.article{
+
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;    
+}
+
+
+.article:hover{
+    /*
+     -webkit-filter: grayscale(100%);
+    filter: grayscale(100%) */
+}
+
+
+
+#recherchepartenaire{
+
+    background-color:grey;
+    border-color:#00BCD4;
+    border-style: solid;
+    font-size: 2vw;
+    margin: 0 0 10% 0;
+    text-align: center;
+    padding: 1%;
+    color: white;
+}
